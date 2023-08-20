@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Hospital</title>
+    <link rel="stylesheet" type="text/css" href="hsop.css">
+	<script defer text="text/javascript" src="main.js"></script><!--code which links html to Javascript-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div class="navbar">
+			<a href="#Home">Home</a>
+			<a href="#Home">About</a>
+			<a href="contact.html">Contact Us</a>
+			<div class="dropdown">
+				<button class="dropbtn">Services
+					<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="#">Link 1</a>
+					<a href="#">Link 2</a>
+					<a href="#">Link 3</a>
+
+				</div>
+			</div>
+		</div>
+	</header>
+   <center><img id="logo" src="img/logo2.jpg"></center>
+    <h1><center><b>TINOTENDA MEDICAL HOSPITAL</b></center></h1>
+        <center><blockquote>"24/7 we are here for you"</blockquote></center>
+<br>
+<br>
+<br>
+ <form class="frmHospital" name="formConnect" id="formCnt"method="post" action="hospital.php">
+
+
+ 	<h2>Patient Details</h2><!--Section where the patient enters details-->
+ 	<input type="text" name="fname" placeholder="Enter Name(s)" id="fname" class="" required="Please fill out!">
+ 	<br>
+ 	<br>
+	 
+ 	
+ 	<input type="text" name="sname" placeholder="Enter Surname" id="sname" required="Please fill out!">
+ 	<br>
+ 	<br>
+
+ 	<input type="text" name="email" placeholder="e.g. johndoe@gmail.com" id="email" required="Please fill out!">
+ 	<br>
+ 	<br>
+
+ 	<input type="date" name="dob" id="dob" required="Please fill out!">
+ 	<br>
+ 	<br>
+
+ 	
+ 	<input type="text" name="address" placeholder="Address e.g. 1511 Muunga Road" id="address" required="Please fill out!">
+ 	<br>
+ 	<br>
+
+ 
+ 	<input type="text" name="phone" placeholder="e.g.+263772236876" id="phone" required="Please fill out!">
+ 	<br>
+ 	<br>
+
+ 	<label for="gender">Gender:</label>
+ 	<select name="gender" id="gender" required="Please fill out!">
+ 		<option>Male</option>
+ 		<option>Female</option>
+ 		<option>Other</option>
+ 	</select>
+
+ 	<h2>Next Of Kin Details</h2><!--Section where next of kin enters details-->
+ 	<input type="text" name="kname" placeholder="Enter Name" id="kname" required="Please fill out!">
+ 	<br>
+ 	<br>
+
+ 	<input type="text" name="relationship" placeholder="Relationship" id="relationship" required="Please fill out!">
+ 	<br>
+ 	<br>
+
+ 	<input type="text" name="kemail" placeholder="e.g. johndoe@gmail.com" id="kemail" required="Please fill out!">
+ 	<br>
+ 	<br>
+
+ 	<input type="text" name="kphone" placeholder="e.g.+263772236876" id="kphone" required="Please fill out!">
+ 	<br>
+ 	<br>
+
+ 	<h2>Financial Details</h2>
+	 <label for="gender">Payment Method:</label>
+	 <select name="payment" id="finance" required="Please fill out!">
+		<option>Cash</option>
+		<option>Swipe</option>
+		<option>Other</option>
+	</select>
+
+
+ 	<p><i>(This part to be filled by Hospital Staff only)</i></p><!--Section where hospital staff enters details-->
+ 	<input type="text" name="drugs" placeholder="Drug Details" id="drugs" required="Please fill out!">
+ 	<br>
+ 	<br>
+
+ 	<input type="text" name="ward" placeholder="Ward" id="ward" required="Please fill out!">
+ 	<br>
+ 	<br>
+
+ 	<input type="text" name="bed" placeholder="Bed" id="bed" required="Please fill out!">
+ 	<br>
+ 	<br>
+   <div class="button">
+    <button id = "Clearbtn"onclick="validateSubmit()">Clear</button>
+    <button id ="Submitbtn" onclick="validateSubmit()">Submit</button>
+   </div>
+
+ </form>
+</body>
+<br>
+<footer class="footer">
+   <p><b>Get to know more about our sister hospitals:</b></p>
+   <ul>
+   <li><a href="https://www.wum.edu.pl/en/kliniki">Click Here!</a></li>
+   <li><a href="https://www.google.com/search?tbs=lf:1,lf_ui:2&tbm=lcl&q=hospitals+in+zimbabwe&rflfq=1&num=10&ved=2ahUKEwiNj_nct6T0AhWHAxAIHfuJB4kQtgN6BAgLEAc">Click Here!</a></li>
+   </ul>
+</footer>
+</html></ul>
